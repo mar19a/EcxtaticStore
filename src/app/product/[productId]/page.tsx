@@ -103,3 +103,22 @@ const Page = async ({ params }: PageProps) => {
                   {product.description}
                 </p>
               </div>
+
+              <div className='mt-6 flex items-center'>
+                <Check
+                  aria-hidden='true'
+                  className='h-5 w-5 flex-shrink-0 text-green-500'
+                />
+                <p className='ml-2 text-sm text-muted-foreground'>
+                  Eligible for instant delivery
+                </p>
+              </div>
+            </section>
+          </div>
+
+          {/* Product images */}
+          <div className='mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center'>
+            <div className='aspect-square rounded-lg'>
+              <ImageSlider urls={validUrls} />
+            </div>
+          </div>
