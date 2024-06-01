@@ -215,3 +215,34 @@ const Page = () => {
                   ) : (
                     <Loader2 className='h-4 w-4 animate-spin text-muted-foreground' />
                   )}
+                </div>
+              </div>
+            </div>
+
+            <div className='mt-6'>
+              <Button
+                disabled={items.length === 0 || isLoading}
+                onClick={() => {
+                  if (productIds.length === 0) {
+                    console.error('No products to check out');
+                    alert('Your cart is empty.'); // Notify the user
+                    return;
+                  }
+                  createCheckoutSession({ productIds });
+                }}
+                className='w-full'
+                size='lg'>
+                {isLoading ? (
+                  <Loader2 className='w-4 h-4 animate-spin mr-1.5' />
+                ) : null}
+                Checkout
+              </Button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Page
