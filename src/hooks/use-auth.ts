@@ -16,3 +16,4 @@ export const useAuth = () => {
           },
         }
       )
+      if (!res.ok) throw new Error()
