@@ -58,3 +58,13 @@ export function formatPrice(
         images: [image],
         creator: '@marianoamaya',
       },
+      icons,
+      metadataBase: new URL('https://ecxtaticstore.up.railway.app'),
+      ...(noIndex && {
+        robots: {
+          index: false,
+          follow: false,
+        },
+      }),
+    }
+  }
