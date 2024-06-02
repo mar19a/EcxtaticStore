@@ -62,5 +62,33 @@ const Navbar = async () => {
                     </Link>
                   )}
 
-)
+                  {user ? (
+                    <span
+                      className='h-6 w-px bg-gray-200'
+                      aria-hidden='true'
+                    />
+                  ) : null}
+
+                  {user ? null : (
+                    <div className='flex lg:ml-6'>
+                      <span
+                        className='h-6 w-px bg-gray-200'
+                        aria-hidden='true'
+                      />
+                    </div>
+                  )}
+
+                  <div className='ml-4 flow-root lg:ml-6'>
+                    <Cart />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </header>
+    </div>
+  )
+}
+
 export default Navbar
