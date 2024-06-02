@@ -15,6 +15,21 @@ const PaymentStatus = ({
   orderId,
   isPaid,
 }: PaymentStatusProps) => {
+  const router = useRouter()
+
+  const { data } = trpc.payment.pollOrderStatus.useQuery(
+    { orderId },
+    {
+      enabled: isPaid === false,
+      refetchInterval: (data) =>
+        data?.isPaid ? false : 1000,
+    }
+  )
+
+  useEffect(() => {
+    if (data?.isPaid) router.refresh()
+  }, [data?.isPaid, router])
+
 
 
 export default PaymentStatus
