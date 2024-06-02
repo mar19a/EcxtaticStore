@@ -16,7 +16,17 @@ const UserAccountNav = ({ user }: { user: User }) => {
   const { signOut } = useAuth()
 
   return (
-
+    <DropdownMenu>
+    <DropdownMenuTrigger
+      asChild
+      className='overflow-visible'>
+      <Button
+        variant='ghost'
+        size='sm'
+        className='relative'>
+        My account
+      </Button>
+    </DropdownMenuTrigger>
   )
 }
 
