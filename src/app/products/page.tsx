@@ -22,6 +22,21 @@ const ProductsPage = ({
     ({ value }) => value === category
   )?.label
 
-
+  return (
+    <MaxWidthWrapper>
+      <ProductReel
+        title={label ?? 'Browse high-quality assets'}
+        query={{
+          category,
+          limit: 40,
+          sort:
+            sort === 'desc' || sort === 'asc'
+              ? sort
+              : undefined,
+        }}
+      />
+    </MaxWidthWrapper>
+  )
+}
 
 export default ProductsPage
