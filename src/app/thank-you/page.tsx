@@ -34,4 +34,26 @@ const ThankYouPage = async ({
     },
   })
 
+  const [order] = orders
+
+  if (!order) return notFound()
+
+  const orderUserId =
+    typeof order.user === 'string'
+      ? order.user
+      : order.user.id
+
+  if (orderUserId !== user?.id) {
+    return redirect(
+      `/sign-in?origin=thank-you?orderId=${order.id}`
+    )
+  }
+
+  const products = order.products as Product[]
+
+  const orderTotal = products.reduce((total, product) => {
+    return total + product.price
+  }, 0)
+
+
   export default ThankYouPage
