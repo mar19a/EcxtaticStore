@@ -17,18 +17,18 @@ const UserAccountNav = ({ user }: { user: User }) => {
 
   return (
     <DropdownMenu>
-    <DropdownMenuTrigger
-      asChild
-      className='overflow-visible'>
-      <Button
-        variant='ghost'
-        size='sm'
-        className='relative'>
-        My account
-      </Button>
-    </DropdownMenuTrigger>
+      <DropdownMenuTrigger
+        asChild
+        className='overflow-visible'>
+        <Button
+          variant='ghost'
+          size='sm'
+          className='relative'>
+          My account
+        </Button>
+      </DropdownMenuTrigger>
 
-    <DropdownMenuContent
+      <DropdownMenuContent
         className='bg-white w-60'
         align='end'>
         <div className='flex items-center justify-start gap-2 p-2'>
@@ -38,6 +38,20 @@ const UserAccountNav = ({ user }: { user: User }) => {
             </p>
           </div>
         </div>
+
+        <DropdownMenuSeparator />
+
+        <DropdownMenuItem asChild>
+          <Link href='/sell'>Seller Dashboard</Link>
+        </DropdownMenuItem>
+
+        <DropdownMenuItem
+          onClick={signOut}
+          className='cursor-pointer'>
+          Log out
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   )
 }
 
