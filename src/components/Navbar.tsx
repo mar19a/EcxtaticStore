@@ -43,5 +43,24 @@ const Navbar = async () => {
                     </Link>
                   )}
 
+                  {user ? null : (
+                    <span
+                      className='h-6 w-px bg-gray-200'
+                      aria-hidden='true'
+                    />
+                  )}
+
+                  {user ? (
+                    <UserAccountNav user={user} />
+                  ) : (
+                    <Link
+                      href='/sign-up'
+                      className={buttonVariants({
+                        variant: 'ghost',
+                      })}>
+                      Create account
+                    </Link>
+                  )}
+
 )
 export default Navbar
