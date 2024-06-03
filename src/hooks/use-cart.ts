@@ -15,3 +15,17 @@ type CartState = {
   removeItem: (productId: string) => void
   clearCart: () => void
 }
+
+export const useCart = create<CartState>()(
+  persist(
+    (set) => ({
+      items: [],
+      addItem: (product) =>
+        set((state) => {
+          return { items: [...state.items, { product }] }
+        }),
+ge: createJSONStorage(() => localStorage),
+    }
+  )
+)
+
