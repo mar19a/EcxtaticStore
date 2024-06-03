@@ -16,7 +16,7 @@ export const PRODUCT_CATEGORIES = [
       {
         name: 'Bestsellers',
         href: '/products?category=ui_kits',
-        imageSrc: '/nav/purple.jpg',
+        imageSrc: '/nav/ui-kits/purple.jpg',
       },
     ],
   },
