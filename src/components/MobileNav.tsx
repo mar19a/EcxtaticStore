@@ -12,16 +12,20 @@ const MobileNav = () => {
 
   const pathname = usePathname()
 
+  // whenever we click an item in the menu and navigate away, we want to close the menu
   useEffect(() => {
     setIsOpen(false)
   }, [pathname])
 
+  // when we click the path we are currently on, we still want the mobile menu to close,
+  // however we cant rely on the pathname for it because that won't change (we're already there)
   const closeOnCurrent = (href: string) => {
     if (pathname === href) {
       setIsOpen(false)
     }
   }
 
+  // remove second scrollbar when mobile menu is open
   useEffect(() => {
     if (isOpen)
       document.body.classList.add('overflow-hidden')
@@ -76,11 +80,10 @@ const MobileNav = () => {
                           key={item.name}
                           className='group relative text-sm'>
                           <div className='relative aspect-square overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
-                            <Image
-                              fill
+                            <img
                               src={item.imageSrc}
                               alt='product category image'
-                              className='object-cover object-center'
+                              style={{ objectFit: 'contain', width: '100%', height: '100%' }}
                             />
                           </div>
                           <Link

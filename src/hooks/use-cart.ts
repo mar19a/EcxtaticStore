@@ -38,5 +38,3 @@ export const useCart = create<CartState>()(
     }
   )
 )
-
-

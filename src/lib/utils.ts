@@ -12,59 +12,59 @@ export function formatPrice(
     currency?: 'USD' | 'EUR' | 'GBP' | 'BDT'
     notation?: Intl.NumberFormatOptions['notation']
   } = {}
-){
-    const { currency = 'USD', notation = 'compact' } = options
-  
-    const numericPrice =
-      typeof price === 'string' ? parseFloat(price) : price
-  
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency,
-      notation,
-      maximumFractionDigits: 2,
-    }).format(numericPrice)
-  }
+) {
+  const { currency = 'USD', notation = 'compact' } = options
 
-  export function constructMetadata({
-    title = 'EcxtaticStore - the marketplace for digital assets',
-    description = 'Ecxtatic is an open-source marketplace for high-quality digital goods.',
-    image = '/thumbnail.png',
-    icons = '/favicon.ico',
-    noIndex = false,
-  }: {
-    title?: string
-    description?: string
-    image?: string
-    icons?: string
-    noIndex?: boolean
-  } = {}): Metadata {
-    return {
+  const numericPrice =
+    typeof price === 'string' ? parseFloat(price) : price
+
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency,
+    notation,
+    maximumFractionDigits: 2,
+  }).format(numericPrice)
+}
+
+export function constructMetadata({
+  title = 'EcxtaticStore - the marketplace for digital assets',
+  description = 'Ecxtatic is an open-source marketplace for high-quality digital goods.',
+  image = '/thumbnail.png',
+  icons = '/favicon.ico',
+  noIndex = false,
+}: {
+  title?: string
+  description?: string
+  image?: string
+  icons?: string
+  noIndex?: boolean
+} = {}): Metadata {
+  return {
+    title,
+    description,
+    openGraph: {
       title,
       description,
-      openGraph: {
-        title,
-        description,
-        images: [
-          {
-            url: image,
-          },
-        ],
-      },
-      twitter: {
-        card: 'summary_large_image',
-        title,
-        description,
-        images: [image],
-        creator: '@marianoamaya',
-      },
-      icons,
-      metadataBase: new URL('https://ecxtaticstore.up.railway.app'),
-      ...(noIndex && {
-        robots: {
-          index: false,
-          follow: false,
+      images: [
+        {
+          url: image,
         },
-      }),
-    }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+      creator: '@marianoamaya',
+    },
+    icons,
+    metadataBase: new URL('https://ecxtatics.up.railway.app'),
+    ...(noIndex && {
+      robots: {
+        index: false,
+        follow: false,
+      },
+    }),
   }
+}

@@ -34,9 +34,6 @@ export const EmailTemplate = ({
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-newsletter-sign-up.png`}
-            width='150'
-            height='150'
             alt='Exctatic'
             style={logo}
           />

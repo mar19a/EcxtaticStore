@@ -6,10 +6,6 @@ const nextConfig = {
 				protocol: "http",
 				hostname: "localhost",
 			},
-			{
-				protocol: "https",
-				hostname: "ecxtaticstore-production.up.railway.app",
-			},
 		],
 	},
 };
