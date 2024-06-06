@@ -36,16 +36,16 @@ export default function Home() {
   return (
     <>
       <MaxWidthWrapper>
-        <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
+      <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
           <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-          Dive into our collection today and discover the possibilities that await. {' '}
+            Discover Our Exclusive Collection of {' '}
             <span className='text-blue-600'>
-              Clothing & Digital assets
+              Fashion & Digital Assets
             </span>
             .
           </h1>
           <p className='mt-6 text-lg max-w-prose text-muted-foreground'>
-          Welcome to the intersection of automotive passion and lifestyle expression — welcome to Ecxtatic.
+          Welcome to Ecxtatic, where automotive enthusiasm meets lifestyle innovation.
           </p>
           <div className='flex flex-col sm:flex-row gap-4 mt-6'>
             <Link
