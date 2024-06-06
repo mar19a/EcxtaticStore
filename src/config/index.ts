@@ -6,17 +6,17 @@ export const PRODUCT_CATEGORIES = [
       {
         name: 'Editor picks',
         href: `/products?category=ui_kits`,
-        imageSrc: '/nav/ui-kits/mixed.jpg',
+        imageSrc: '/nav/ui-kits/editors.jpg',
       },
       {
         name: 'New Arrivals',
         href: '/products?category=ui_kits&sort=desc',
-        imageSrc: '/nav/ui-kits/blue.jpg',
+        imageSrc: '/nav/ui-kits/newarrival.jpg',
       },
       {
         name: 'Bestsellers',
         href: '/products?category=ui_kits',
-        imageSrc: '/nav/ui-kits/purple.jpg',
+        imageSrc: '/nav/ui-kits/bestselling.jpg',
       },
     ],
   },
@@ -25,12 +25,12 @@ export const PRODUCT_CATEGORIES = [
     value: 'Digital_Assets' as const,
     featured: [
       {
-        name: 'Favorite Icon Picks',
+        name: 'Bestselling Photo Collections',
         href: `/products?category=icons`,
         imageSrc: '/nav/icons/picks.jpg',
       },
       {
-        name: 'New Arrivals',
+        name: 'Best Selling Video Tutorials',
         href: '/products?category=icons&sort=desc',
         imageSrc: '/nav/icons/new.jpg',
       },

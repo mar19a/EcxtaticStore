@@ -68,11 +68,10 @@ const NavItem = ({
                       key={item.name}
                       className='group relative text-base sm:text-sm'>
                       <div className='relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
-                        <Image
+                        <img
                           src={item.imageSrc}
                           alt='product category image'
-                          fill
-                          className='object-cover object-center'
+                          className='object-contain object-center w-full h-full'
                         />
                       </div>
 
