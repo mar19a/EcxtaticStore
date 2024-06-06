@@ -30,14 +30,14 @@ export const PRODUCT_CATEGORIES = [
         imageSrc: '/nav/icons/picks.jpg',
       },
       {
-        name: 'Best Selling Video Tutorials',
+        name: 'Bestselling Video Tutorials',
         href: '/products?category=icons&sort=desc',
         imageSrc: '/nav/icons/new.jpg',
       },
       {
-        name: 'Bestselling Icons',
+        name: 'Editing Course',
         href: '/products?category=icons',
-        imageSrc: '/nav/icons/bestsellers.jpg',
+        imageSrc: '/nav/icons/editing.jpg',
       },
     ],
   },
