@@ -85,6 +85,10 @@ The primary motivation behind creating Ecxtatic Store was to develop a modern an
 
 <img width="1440" alt="Screenshot 2024-06-06 at 4 41 44 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/b04f191a-5412-41fd-98f7-3d0f58242423"> <img width="1440" alt="Screenshot 2024-06-06 at 4 42 24 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/9d105bcd-233e-4290-a3c1-979d48464693"> <img width="1440" alt="Screenshot 2024-06-06 at 4 42 57 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/d0e45a51-97d7-49e2-b2f4-8b216baae556">
 
+**Verification and Order Confirmation Emails:**
+
+<img width="1083" alt="Screenshot 2024-06-06 at 5 09 28 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/eb9b7376-41c1-44d6-86be-5eecb976979d"> <img width="1440" alt="Screenshot 2024-06-06 at 11 53 37 AM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/43cdd823-67aa-475b-ae64-445420bc559f">
+
 ## License
 
 This project is licensed under the MIT License.
