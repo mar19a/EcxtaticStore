@@ -2,7 +2,7 @@
 
 <img width="1440" alt="Screenshot 2024-06-06 at 4 36 05 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/2727c480-85ef-4d98-8477-111ecd4f62f9">
 
-Ecxtatic Store is a sophisticated full-stack e-commerce platform designed to deliver a seamless shopping experience for users. It incorporates cutting-edge technologies and frameworks to ensure robustness, efficiency, and scalability.
+Ecxtatic Store is a sophisticated fullstack e-commerce platform designed to deliver a seamless shopping experience for users. It incorporates cutting-edge technologies and frameworks to ensure robustness, efficiency, and scalability.
 
 ## App Walkthrough
 
@@ -24,7 +24,6 @@ Ecxtatic Store is a sophisticated full-stack e-commerce platform designed to del
 **Users are able to sell their products in the website aswell. They're subject to admin's approval:**
 
 <img width="1440" alt="Screenshot 2024-06-06 at 4 40 57 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/616e6326-c5f3-41cd-bb4d-72f64ac5d81a"> <img width="1440" alt="Screenshot 2024-06-06 at 4 41 44 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/aa4ecda6-881a-4121-bab2-2f53a3cb8e71"> <img width="1440" alt="Screenshot 2024-06-06 at 4 41 58 PM" src="https://github.com/mar19a/EcxtaticStore/assets/84360137/00eb7cc1-aa48-4201-99bb-4d772c12606c">
-
 
 
 **Admins are able to toggle Light or Dark mode for the website:** 
